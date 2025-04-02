@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,16 +14,16 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
+    --primary: 262 83% 58%;
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 210 40% 96.1%;
+    --secondary: 320 91% 61%;
     --secondary-foreground: 222.2 47.4% 11.2%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 210 40% 96.1%;
+    --accent: 199 89% 48%;
     --accent-foreground: 222.2 47.4% 11.2%;
 
     --destructive: 0 84.2% 60.2%;
@@ -30,24 +31,17 @@
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --ring: 262 83% 58%;
 
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
@@ -61,16 +55,16 @@
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 262 83% 58%;
+    --primary-foreground: 210 40% 98%;
 
-    --secondary: 217.2 32.6% 17.5%;
+    --secondary: 320 91% 61%;
     --secondary-foreground: 210 40% 98%;
 
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 217.2 32.6% 17.5%;
+    --accent: 199 89% 48%;
     --accent-foreground: 210 40% 98%;
 
     --destructive: 0 62.8% 30.6%;
@@ -97,5 +91,87 @@
 
   body {
     @apply bg-background text-foreground;
+  }
+
+  @font-face {
+    font-family: 'Comic Heroes';
+    src: url('/fonts/comicheroes.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
+@layer components {
+  .hero-title {
+    @apply text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight;
+    background: linear-gradient(to right, #9b87f5, #D946EF, #0EA5E9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    animation: gradient 8s ease infinite;
+    background-size: 200% 200%;
+  }
+
+  .nav-link {
+    @apply relative inline-flex items-center text-sm font-medium transition-colors 
+    focus-visible:outline-none focus-visible:ring-1 
+    focus-visible:ring-ring disabled:pointer-events-none 
+    disabled:opacity-50 hover:text-primary overflow-hidden group;
+  }
+
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: hsl(var(--primary));
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+
+  .nav-link:hover::after {
+    transform: translateX(0);
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors 
+    focus-visible:outline-none focus-visible:ring-1 
+    focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50
+    hover:bg-primary/90 h-10 px-4 py-2 bg-primary text-primary-foreground;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors 
+    focus-visible:outline-none focus-visible:ring-1 
+    focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50
+    hover:bg-secondary/90 h-10 px-4 py-2 bg-secondary text-secondary-foreground;
+  }
+
+  .starry-bg {
+    background-color: #1A1F2C;
+    background-image: radial-gradient(circle at 25px 25px, rgba(255, 255, 255, 0.2) 2px, transparent 0),
+                      radial-gradient(circle at 75px 75px, rgba(255, 255, 255, 0.2) 1px, transparent 0),
+                      radial-gradient(circle at 100px 100px, rgba(255, 255, 255, 0.2) 2px, transparent 0),
+                      radial-gradient(circle at 125px 50px, rgba(255, 255, 255, 0.2) 1px, transparent 0);
+    background-size: 150px 150px;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
