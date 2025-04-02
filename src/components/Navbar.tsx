@@ -38,12 +38,12 @@ const Navbar: React.FC<NavbarProps> = ({ cartItemCount, onCartClick }) => {
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link to="/" className="nav-link">Home</Link>
-            <Link to="/men" className="nav-link">Men</Link>
-            <Link to="/women" className="nav-link">Women</Link>
-            <Link to="/collections" className="nav-link">Collections</Link>
-            <Link to="/themes" className="nav-link">Themes</Link>
-            <Link to="/membership" className="nav-link">Membership</Link>
+            <Link to="/" className="nav-link group">Home</Link>
+            <Link to="/men" className="nav-link group">Men</Link>
+            <Link to="/women" className="nav-link group">Women</Link>
+            <Link to="/collections" className="nav-link group">Collections</Link>
+            <Link to="/themes" className="nav-link group">Themes</Link>
+            <Link to="/membership" className="nav-link group">Membership</Link>
           </div>
           
           {/* Search, User, Cart Icons */}

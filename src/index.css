@@ -114,10 +114,10 @@
   }
 
   .nav-link {
-    @apply relative inline-flex items-center text-sm font-medium transition-colors 
+    @apply relative inline-flex items-center text-sm font-medium transition-colors
     focus-visible:outline-none focus-visible:ring-1 
     focus-visible:ring-ring disabled:pointer-events-none 
-    disabled:opacity-50 hover:text-primary overflow-hidden group;
+    disabled:opacity-50 hover:text-primary overflow-hidden;
   }
 
   .nav-link::after {
