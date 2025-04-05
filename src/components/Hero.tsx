@@ -9,11 +9,11 @@ const Hero: React.FC = () => {
       {/* Background image */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="/public/lovable-uploads/29008383-8b9d-40ee-bfe7-e61f50c0d5c4.png" 
+          src="/public/lovable-uploads/b846105a-2265-499f-881e-0b839270d84f.png" 
           alt="Hero background" 
-          className="w-full h-full object-cover object-center opacity-80"
+          className="w-full h-full object-cover object-center"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-hero-bg/90 to-hero-bg/60"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-hero-bg/80 to-hero-bg/60"></div>
       </div>
       
       {/* Animated cosmic particles */}
