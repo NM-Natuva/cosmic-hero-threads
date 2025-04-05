@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Heart, Menu, Search, ShoppingCart, User, X } from 'lucide-react';
@@ -31,22 +30,9 @@ const Navbar: React.FC<NavbarProps> = ({ cartItemCount, onCartClick }) => {
     <nav className="bg-hero-bg/95 text-white sticky top-0 z-50 backdrop-blur-sm border-b border-white/10">
       <div className="container mx-auto px-4 py-3">
         <div className="flex justify-between items-center">
-          {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
-            <div className="flex items-center">
-              <svg width="30" height="30" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" className="mr-2">
-                <path d="M20 5L5 20L20 35L35 20L20 5Z" fill="url(#paint0_linear)" />
-                <path d="M20 12L12 20L20 28L28 20L20 12Z" fill="#0EA5E9" />
-                <defs>
-                  <linearGradient id="paint0_linear" x1="5" y1="5" x2="35" y2="35" gradientUnits="userSpaceOnUse">
-                    <stop stopColor="#9b87f5" />
-                    <stop offset="0.5" stopColor="#D946EF" />
-                    <stop offset="1" stopColor="#0EA5E9" />
-                  </linearGradient>
-                </defs>
-              </svg>
-              <span className="hero-title text-xl md:text-2xl font-bold">ZIDIO</span>
-            </div>
+          {/* Logo - removed SVG, kept only text */}
+          <Link to="/" className="flex items-center">
+            <span className="hero-title text-xl md:text-2xl font-bold">ZIDIO</span>
           </Link>
           
           {/* Desktop Navigation */}
