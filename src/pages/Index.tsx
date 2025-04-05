@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import Hero from '@/components/Hero';
 import Navbar from '@/components/Navbar';
@@ -89,12 +88,13 @@ const Index = () => {
   ];
   
   const bestSellers: Product[] = [
+    // Replacing Superman t-shirt image with Iron Man image
     {
       id: '5',
       name: 'Superman Classic Symbol Tee',
       price: 26.99,
       originalPrice: 35.99,
-      image: '/public/lovable-uploads/87cdf70a-2c37-404f-bda5-f2480d52b8ab.png',
+      image: '/public/lovable-uploads/ac167788-081a-4272-8aa2-db0272de9049.png', // Changed from Superman to Iron Man image
       category: 'Men',
       tags: ['DC Comics', 'Sleeveless']
     },

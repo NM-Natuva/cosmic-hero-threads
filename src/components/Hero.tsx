@@ -6,14 +6,9 @@ import { ArrowRight } from 'lucide-react';
 const Hero: React.FC = () => {
   return (
     <div className="relative overflow-hidden bg-hero-pattern py-16 md:py-24 text-white">
-      {/* Background image */}
+      {/* Background gradient instead of image */}
       <div className="absolute inset-0 z-0">
-        <img 
-          src="/public/lovable-uploads/b846105a-2265-499f-881e-0b839270d84f.png" 
-          alt="Hero background" 
-          className="w-full h-full object-cover object-center"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-hero-bg/80 to-hero-bg/60"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-hero-bg to-cosmic-purple/60"></div>
       </div>
       
       {/* Animated cosmic particles */}
