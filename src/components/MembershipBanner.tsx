@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 
 const MembershipBanner: React.FC = () => {
@@ -18,13 +19,13 @@ const MembershipBanner: React.FC = () => {
           Become a member and unlock exclusive benefits: early access to new designs,
           member-only discounts, free shipping, and limited edition merchandise.
         </p>
-        <a 
-          href="/membership" 
+        <Link 
+          to="/membership" 
           className="inline-flex items-center bg-white text-cosmic-purple py-3 px-6 rounded-md hover:bg-gray-100 transition-colors font-semibold"
         >
           Join Now
           <ArrowRight className="ml-2 h-4 w-4" />
-        </a>
+        </Link>
       </div>
     </section>
   );

@@ -4,6 +4,7 @@ import { X, ShoppingCart, Trash } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Product } from './ProductCard';
 import { useToast } from '@/components/ui/use-toast';
+import { Link } from 'react-router-dom';
 
 interface CartItem extends Product {
   quantity: number;
@@ -34,7 +35,7 @@ const Cart: React.FC<CartProps> = ({
   const handleCheckout = () => {
     toast({
       title: "Checkout initiated",
-      description: "This would normally redirect to a checkout page.",
+      description: "Redirecting to payment page.",
     });
   };
   
@@ -131,12 +132,14 @@ const Cart: React.FC<CartProps> = ({
                 <span>${total.toFixed(2)}</span>
               </div>
             </div>
-            <Button 
-              onClick={handleCheckout}
-              className="w-full py-6"
-            >
-              Proceed to Checkout
-            </Button>
+            <Link to="/payment" onClick={onClose}>
+              <Button 
+                onClick={handleCheckout}
+                className="w-full py-6"
+              >
+                Proceed to Checkout
+              </Button>
+            </Link>
             <Button 
               variant="outline"
               onClick={onClose}

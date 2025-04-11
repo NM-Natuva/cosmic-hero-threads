@@ -1,7 +1,7 @@
 
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { Heart, Menu, Search, ShoppingCart, User, X } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import { Heart, Menu, Search, ShoppingCart, User, X, LogIn, LogOut } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useIsMobile } from '@/hooks/use-mobile';
 import { useToast } from '@/components/ui/use-toast';
@@ -14,8 +14,24 @@ interface NavbarProps {
 const Navbar: React.FC<NavbarProps> = ({ cartItemCount, onCartClick }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [user, setUser] = useState<any>(null);
   const isMobile = useIsMobile();
   const { toast } = useToast();
+  const navigate = useNavigate();
+  
+  useEffect(() => {
+    // Check login status from localStorage on component mount
+    const loginStatus = localStorage.getItem('isLoggedIn') === 'true';
+    setIsLoggedIn(loginStatus);
+    
+    if (loginStatus) {
+      const userData = localStorage.getItem('user');
+      if (userData) {
+        setUser(JSON.parse(userData));
+      }
+    }
+  }, []);
   
   const toggleMenu = () => setIsOpen(!isOpen);
   
@@ -25,6 +41,19 @@ const Navbar: React.FC<NavbarProps> = ({ cartItemCount, onCartClick }) => {
       title: "Search initiated",
       description: `Searching for: ${searchQuery}`,
     });
+  };
+  
+  const handleLogout = () => {
+    localStorage.removeItem('isLoggedIn');
+    localStorage.removeItem('user');
+    setIsLoggedIn(false);
+    setUser(null);
+    toast({
+      title: "Logged out",
+      description: "You have been successfully logged out.",
+    });
+    setIsOpen(false); // Close mobile menu if open
+    navigate('/');
   };
   
   return (
@@ -71,9 +100,29 @@ const Navbar: React.FC<NavbarProps> = ({ cartItemCount, onCartClick }) => {
                 <Search size={16} className="absolute left-2 top-1/2 transform -translate-y-1/2 text-white/70" />
               </form>
             </div>
-            <button className="p-2 hover:text-primary transition-colors">
-              <User size={20} />
-            </button>
+            
+            {isLoggedIn ? (
+              <>
+                <div className="flex items-center">
+                  <Button variant="ghost" size="sm" className="text-white">
+                    <User size={20} className="mr-2" />
+                    <span className="text-sm">{user?.email?.split('@')[0]}</span>
+                  </Button>
+                </div>
+                <button 
+                  className="p-2 hover:text-primary transition-colors flex items-center"
+                  onClick={handleLogout}
+                >
+                  <LogOut size={20} />
+                </button>
+              </>
+            ) : (
+              <Link to="/login" className="p-2 hover:text-primary transition-colors flex items-center">
+                <LogIn size={20} className="mr-1" />
+                <span>Login</span>
+              </Link>
+            )}
+            
             <button className="p-2 hover:text-primary transition-colors">
               <Heart size={20} />
             </button>
@@ -131,12 +180,41 @@ const Navbar: React.FC<NavbarProps> = ({ cartItemCount, onCartClick }) => {
             <Link to="/women" className="py-2 border-b border-white/10">Women</Link>
             <Link to="/collections" className="py-2 border-b border-white/10">Collections</Link>
             <Link to="/themes" className="py-2 border-b border-white/10">Themes</Link>
-            <Link to="/membership" className="py-2">Membership</Link>
+            <Link to="/membership" className="py-2 border-b border-white/10">Membership</Link>
             
-            <div className="flex space-x-4 py-2">
-              <Button variant="outline" size="sm" className="flex-1">
-                <User size={16} className="mr-2" /> Account
-              </Button>
+            <div className="flex flex-col space-y-2 py-2">
+              {isLoggedIn ? (
+                <>
+                  <div className="flex justify-between items-center py-2 border-b border-white/10">
+                    <div className="flex items-center">
+                      <User size={18} className="mr-2" />
+                      <span>{user?.email?.split('@')[0]}</span>
+                    </div>
+                    <Button 
+                      variant="ghost" 
+                      size="sm" 
+                      onClick={handleLogout}
+                      className="text-white flex items-center"
+                    >
+                      <LogOut size={16} className="mr-1" />
+                      Logout
+                    </Button>
+                  </div>
+                </>
+              ) : (
+                <>
+                  <Link to="/login">
+                    <Button variant="outline" size="sm" className="flex-1 w-full">
+                      <LogIn size={16} className="mr-2" /> Login
+                    </Button>
+                  </Link>
+                  <Link to="/signup">
+                    <Button size="sm" className="flex-1 w-full">
+                      Sign Up
+                    </Button>
+                  </Link>
+                </>
+              )}
               <Button variant="outline" size="sm" className="flex-1">
                 <Heart size={16} className="mr-2" /> Wishlist
               </Button>

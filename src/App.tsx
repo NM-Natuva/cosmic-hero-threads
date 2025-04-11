@@ -10,6 +10,10 @@ import Men from "./pages/Men";
 import Women from "./pages/Women";
 import Collections from "./pages/Collections";
 import NotFound from "./pages/NotFound";
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
+import Membership from "./pages/Membership";
+import Payment from "./pages/Payment";
 
 const queryClient = new QueryClient();
 
@@ -26,6 +30,10 @@ const App = () => (
             <Route path="/women" element={<Women />} />
             <Route path="/collections/:collectionType" element={<Collections />} />
             <Route path="/collections" element={<Collections />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<Signup />} />
+            <Route path="/membership" element={<Membership />} />
+            <Route path="/payment" element={<Payment />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
