@@ -159,7 +159,7 @@ const Themes: React.FC = () => {
               <div className="md:flex">
                 <div className="md:w-1/2">
                   <img 
-                    src="https://i.pinimg.com/736x/6b/a9/e8/6ba9e81ba385bcc7d234d9cb15088a24.jpg" 
+                    src="https://cdn.flickeringmyth.com/wp-content/uploads/2024/08/Deadpool-Team-Up-1-3-1.jpg" 
                     alt="Crossover Events" 
                     className="w-full h-full object-cover"
                   />
