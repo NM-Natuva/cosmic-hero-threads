@@ -54,8 +54,8 @@ const Hero: React.FC = () => {
           <div className="relative hidden md:block">
             <div className="relative w-full h-[500px] animate-float">
               <img 
-                src="https://images.unsplash.com/photo-1612036782180-6f0822a5b09a?q=80&w=1000" 
-                alt="Superhero T-shirt" 
+                src="https://shihiko.com/cdn/shop/files/Untitled_design_6_a2adb8ec-86c2-47ec-9cd4-531da0a84aba.jpg?v=1730842591" 
+                alt="attack on titan t shirt" 
                 className="object-contain w-full h-full"
               />
             </div>
