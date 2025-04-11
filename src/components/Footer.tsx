@@ -45,8 +45,8 @@ const Footer: React.FC = () => {
               <li><Link to="/men" className="text-white/70 hover:text-white transition-colors">Men</Link></li>
               <li><Link to="/women" className="text-white/70 hover:text-white transition-colors">Women</Link></li>
               <li><Link to="/collections" className="text-white/70 hover:text-white transition-colors">Collections</Link></li>
-              <li><Link to="/new-arrivals" className="text-white/70 hover:text-white transition-colors">New Arrivals</Link></li>
-              <li><Link to="/sales" className="text-white/70 hover:text-white transition-colors">Sales</Link></li>
+              <li><Link to="/themes" className="text-white/70 hover:text-white transition-colors">Themes</Link></li>
+              <li><Link to="/membership" className="text-white/70 hover:text-white transition-colors">Membership</Link></li>
             </ul>
           </div>
           
@@ -56,27 +56,27 @@ const Footer: React.FC = () => {
             <ul className="space-y-2">
               <li><Link to="/contact" className="text-white/70 hover:text-white transition-colors">Contact Us</Link></li>
               <li><Link to="/faqs" className="text-white/70 hover:text-white transition-colors">FAQs</Link></li>
-              <li><Link to="/track-order" className="text-white/70 hover:text-white transition-colors">Track Order</Link></li>
+              <li><Link to="/my-orders" className="text-white/70 hover:text-white transition-colors">Track Order</Link></li>
               <li><Link to="/returns" className="text-white/70 hover:text-white transition-colors">Returns & Exchanges</Link></li>
               <li><Link to="/size-guide" className="text-white/70 hover:text-white transition-colors">Size Guide</Link></li>
             </ul>
           </div>
           
-          {/* Contact */}
+          {/* Contact - Updated to India */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact</h3>
             <ul className="space-y-4">
               <li className="flex items-start">
                 <MapPin className="w-5 h-5 mr-3 text-cosmic-purple" />
-                <span className="text-white/70">123 Hero Street, Comic City, NY 10001, USA</span>
+                <span className="text-white/70">123 Superhero Street, Mumbai, Maharashtra 400001, India</span>
               </li>
               <li className="flex items-center">
                 <Phone className="w-5 h-5 mr-3 text-cosmic-purple" />
-                <span className="text-white/70">+1 (555) 123-4567</span>
+                <span className="text-white/70">+91 9876543210</span>
               </li>
               <li className="flex items-center">
                 <Mail className="w-5 h-5 mr-3 text-cosmic-purple" />
-                <span className="text-white/70">support@zidio.com</span>
+                <span className="text-white/70">support@zidio.in</span>
               </li>
             </ul>
           </div>

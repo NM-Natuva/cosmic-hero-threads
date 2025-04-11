@@ -1,10 +1,10 @@
 
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { Heart, Menu, Search, ShoppingCart, User, X, LogIn, LogOut } from 'lucide-react';
+import { Heart, Menu, Search, ShoppingCart, User, X, LogIn, LogOut, Package } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useIsMobile } from '@/hooks/use-mobile';
-import { useToast } from '@/components/ui/use-toast';
+import { useToast } from '@/hooks/use-toast';
 
 interface NavbarProps {
   cartItemCount: number;
@@ -109,6 +109,11 @@ const Navbar: React.FC<NavbarProps> = ({ cartItemCount, onCartClick }) => {
                     <span className="text-sm">{user?.email?.split('@')[0]}</span>
                   </Button>
                 </div>
+                {/* My Orders Link for Desktop */}
+                <Link to="/my-orders" className="p-2 hover:text-primary transition-colors flex items-center">
+                  <Package size={20} className="mr-1" />
+                  <span>My Orders</span>
+                </Link>
                 <button 
                   className="p-2 hover:text-primary transition-colors flex items-center"
                   onClick={handleLogout}
@@ -190,6 +195,13 @@ const Navbar: React.FC<NavbarProps> = ({ cartItemCount, onCartClick }) => {
                       <User size={18} className="mr-2" />
                       <span>{user?.email?.split('@')[0]}</span>
                     </div>
+                    {/* My Orders Link for Mobile */}
+                    <Link to="/my-orders">
+                      <Button variant="ghost" size="sm" className="text-white flex items-center mr-2">
+                        <Package size={16} className="mr-1" />
+                        Orders
+                      </Button>
+                    </Link>
                     <Button 
                       variant="ghost" 
                       size="sm" 
