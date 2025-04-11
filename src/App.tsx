@@ -14,6 +14,7 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Membership from "./pages/Membership";
 import Payment from "./pages/Payment";
+import Themes from "./pages/Themes";
 
 const queryClient = new QueryClient();
 
@@ -34,6 +35,7 @@ const App = () => (
             <Route path="/signup" element={<Signup />} />
             <Route path="/membership" element={<Membership />} />
             <Route path="/payment" element={<Payment />} />
+            <Route path="/themes" element={<Themes />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

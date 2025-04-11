@@ -10,13 +10,13 @@ import { Product } from '@/components/ProductCard';
 const Women: React.FC = () => {
   const [cartItems, setCartItems] = useState<any[]>([]);
   
-  // Sample women's products
+  // Enhanced women's products with more options
   const womensProducts: Product[] = [
     {
       id: '3',
       name: 'Wonder Woman Star Power T-Shirt',
       price: 27.99,
-      image: 'https://images.unsplash.com/photo-1583744946564-b52ac1c389c8?q=80&w=1000',
+      image: 'https://images.unsplash.com/photo-1577655197620-704858b270da?q=80&w=1000',
       category: 'Women',
       tags: ['DC Comics', 'Crop Top']
     },
@@ -25,9 +25,60 @@ const Women: React.FC = () => {
       name: 'Harley Quinn Pop Art T-Shirt',
       price: 29.99,
       originalPrice: 39.99,
-      image: 'https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?q=80&w=1000',
+      image: 'https://images.unsplash.com/photo-1588117305388-c2631a279f82?q=80&w=1000',
       category: 'Women',
       tags: ['DC Comics', 'Crop Top']
+    },
+    // New products added
+    {
+      id: '13',
+      name: 'Black Widow Stealth Tee',
+      price: 31.99,
+      image: 'https://images.unsplash.com/photo-1603344797033-f0f4f587ab60?q=80&w=1000',
+      category: 'Women',
+      tags: ['Marvel', 'Fitted']
+    },
+    {
+      id: '14',
+      name: 'Captain Marvel Cosmic Power Shirt',
+      price: 28.99,
+      originalPrice: 37.99,
+      image: 'https://images.unsplash.com/photo-1541257710737-06d667133a53?q=80&w=1000',
+      category: 'Women',
+      tags: ['Marvel', 'Premium']
+    },
+    {
+      id: '15',
+      name: 'Supergirl Logo Crop Top',
+      price: 26.99,
+      image: 'https://images.unsplash.com/photo-1503185912284-5271ff81b9a8?q=80&w=1000',
+      category: 'Women',
+      tags: ['DC Comics', 'Crop Top']
+    },
+    {
+      id: '16',
+      name: 'Scarlet Witch Hex Pattern Tee',
+      price: 32.99,
+      image: 'https://images.unsplash.com/photo-1560743641-3914f2c45636?q=80&w=1000',
+      category: 'Women',
+      tags: ['Marvel', 'Limited Edition']
+    },
+    {
+      id: '17',
+      name: 'Batgirl Vigilante Top',
+      price: 29.99,
+      image: 'https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=1000',
+      category: 'Women',
+      tags: ['DC Comics', 'Premium']
+    },
+    {
+      id: '18',
+      name: 'Storm X-Men Weather Goddess Tee',
+      price: 33.99,
+      originalPrice: 42.99,
+      image: 'https://images.unsplash.com/photo-1544982503-9f984c14501a?q=80&w=1000',
+      category: 'Women',
+      tags: ['Marvel', 'X-Men Collection']
     }
   ];
   

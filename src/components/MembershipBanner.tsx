@@ -2,13 +2,23 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
+import { useToast } from '@/components/ui/use-toast';
 
 const MembershipBanner: React.FC = () => {
+  const { toast } = useToast();
+  
+  const handleInfoClick = () => {
+    toast({
+      title: "Hero Club Benefits",
+      description: "Join to get early access, discounts, free shipping and exclusive merchandise!",
+    });
+  };
+  
   return (
     <section className="py-16 bg-gradient-to-r from-cosmic-purple to-cosmic-pink text-white relative overflow-hidden">
       <div className="absolute inset-0 opacity-10">
         <img 
-          src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1000" 
+          src="https://images.unsplash.com/photo-1579547621212-856e1a44c907?q=80&w=1000" 
           alt="Membership background" 
           className="w-full h-full object-cover"
         />
@@ -19,13 +29,21 @@ const MembershipBanner: React.FC = () => {
           Become a member and unlock exclusive benefits: early access to new designs,
           member-only discounts, free shipping, and limited edition merchandise.
         </p>
-        <Link 
-          to="/membership" 
-          className="inline-flex items-center bg-white text-cosmic-purple py-3 px-6 rounded-md hover:bg-gray-100 transition-colors font-semibold"
-        >
-          Join Now
-          <ArrowRight className="ml-2 h-4 w-4" />
-        </Link>
+        <div className="flex flex-wrap justify-center gap-4">
+          <Link 
+            to="/membership" 
+            className="inline-flex items-center bg-white text-cosmic-purple py-3 px-6 rounded-md hover:bg-gray-100 transition-colors font-semibold"
+          >
+            Join Now
+            <ArrowRight className="ml-2 h-4 w-4" />
+          </Link>
+          <button
+            onClick={handleInfoClick}
+            className="inline-flex items-center bg-transparent border border-white text-white py-3 px-6 rounded-md hover:bg-white/10 transition-colors font-semibold"
+          >
+            Learn More
+          </button>
+        </div>
       </div>
     </section>
   );

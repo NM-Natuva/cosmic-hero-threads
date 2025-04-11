@@ -10,13 +10,13 @@ import { Product } from '@/components/ProductCard';
 const Men: React.FC = () => {
   const [cartItems, setCartItems] = useState<any[]>([]);
   
-  // Sample men's products
+  // Enhanced men's products with more options
   const mensProducts: Product[] = [
     {
       id: '1',
       name: 'Batman Shadow Knight T-Shirt',
       price: 29.99,
-      image: '/public/lovable-uploads/ede317e2-fedb-4004-b72d-5ee730357f0a.png',
+      image: 'https://images.unsplash.com/photo-1527719327859-c6ce80353573?q=80&w=1000',
       category: 'Men',
       tags: ['DC Comics', 'Graphic Print']
     },
@@ -25,7 +25,7 @@ const Men: React.FC = () => {
       name: 'Spider-Man Classic Logo Tee',
       price: 24.99,
       originalPrice: 34.99,
-      image: '/public/lovable-uploads/a4dc2ee2-9ef6-4ea8-bc1a-25b79993a68e.png',
+      image: 'https://images.unsplash.com/photo-1503342394128-c104d54dba01?q=80&w=1000',
       category: 'Men',
       tags: ['Marvel', 'Oversized Fit']
     },
@@ -33,7 +33,7 @@ const Men: React.FC = () => {
       id: '4',
       name: 'Iron Man Tech Suit Tee',
       price: 32.99,
-      image: '/public/lovable-uploads/ac167788-081a-4272-8aa2-db0272de9049.png',
+      image: 'https://images.unsplash.com/photo-1576566588028-4147f3842f27?q=80&w=1000',
       category: 'Men',
       tags: ['Marvel', 'Long Sleeve']
     },
@@ -42,9 +42,43 @@ const Men: React.FC = () => {
       name: 'Superman Classic Symbol Tee',
       price: 26.99,
       originalPrice: 35.99,
-      image: '/public/lovable-uploads/87cdf70a-2c37-404f-bda5-f2480d52b8ab.png',
+      image: 'https://images.unsplash.com/photo-1551799517-eb8f03cb5e6a?q=80&w=1000',
       category: 'Men',
       tags: ['DC Comics', 'Sleeveless']
+    },
+    // New products added
+    {
+      id: '9',
+      name: 'Hulk Smash Edition Tee',
+      price: 28.99,
+      image: 'https://images.unsplash.com/photo-1618354691373-d851c5c3a990?q=80&w=1000',
+      category: 'Men',
+      tags: ['Marvel', 'Premium Fit']
+    },
+    {
+      id: '10',
+      name: 'The Flash Lightning Bolt Shirt',
+      price: 25.99,
+      originalPrice: 32.99,
+      image: 'https://images.unsplash.com/photo-1561052967-61fc91e48d79?q=80&w=1000',
+      category: 'Men',
+      tags: ['DC Comics', 'Athletic Fit']
+    },
+    {
+      id: '11',
+      name: 'Black Panther Wakanda Tech Tee',
+      price: 34.99,
+      image: 'https://images.unsplash.com/photo-1571945153237-4929e783af4a?q=80&w=1000',
+      category: 'Men',
+      tags: ['Marvel', 'Limited Edition']
+    },
+    {
+      id: '12',
+      name: 'Joker Chaos Premium T-Shirt',
+      price: 39.99,
+      image: 'https://images.unsplash.com/photo-1564557287817-3785e38ec1f5?q=80&w=1000',
+      category: 'Men',
+      tags: ['DC Comics', 'Collector Item']
     }
   ];
   
