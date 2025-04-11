@@ -16,7 +16,7 @@ const Women: React.FC = () => {
       id: '3',
       name: 'Wonder Woman Star Power T-Shirt',
       price: 27.99,
-      image: '/public/lovable-uploads/d8fbbcf3-deb1-4ff3-9823-45c51368b511.png',
+      image: 'https://images.unsplash.com/photo-1583744946564-b52ac1c389c8?q=80&w=1000',
       category: 'Women',
       tags: ['DC Comics', 'Crop Top']
     },
@@ -25,7 +25,7 @@ const Women: React.FC = () => {
       name: 'Harley Quinn Pop Art T-Shirt',
       price: 29.99,
       originalPrice: 39.99,
-      image: '/public/lovable-uploads/d8fbbcf3-deb1-4ff3-9823-45c51368b511.png',
+      image: 'https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?q=80&w=1000',
       category: 'Women',
       tags: ['DC Comics', 'Crop Top']
     }

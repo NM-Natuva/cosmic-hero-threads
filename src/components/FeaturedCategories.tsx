@@ -17,19 +17,19 @@ const FeaturedCategories: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <CategoryCard 
             title="Marvel Universe" 
-            image="/public/lovable-uploads/053c6a6e6-b65e-4055-970b-6313d59e8554.png"
+            image="https://images.unsplash.com/photo-1635805737707-575885ab0820?q=80&w=1000"
             link="/collections/marvel"
             description="Avengers assemble! Gear up with our exclusive Marvel collection."
           />
           <CategoryCard 
             title="DC Comics" 
-            image="/public/lovable-uploads/ede317e2-fedb-4004-b72d-5ee730357f0a.png"
+            image="https://images.unsplash.com/photo-1594736797933-d0501ba2fe65?q=80&w=1000"
             link="/collections/dc"
             description="Channel your inner superhero with our DC Comics inspired apparel."
           />
           <CategoryCard 
             title="Anime Heroes" 
-            image="/public/lovable-uploads/87cdf70a-2c37-404f-bda5-f2480d52b8ab.png"
+            image="https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?q=80&w=1000"
             link="/collections/anime"
             description="Bring your favorite anime characters to life with our collection."
           />

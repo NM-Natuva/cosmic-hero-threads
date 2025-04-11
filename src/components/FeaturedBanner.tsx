@@ -25,7 +25,7 @@ const FeaturedBanner: React.FC = () => {
           </div>
           <div className="relative">
             <img 
-              src="/public/lovable-uploads/054bbef6-ff23-4c4e-9fa6-a4a98238c276.png" 
+              src="https://images.unsplash.com/photo-1601924582970-9238bcb495d9?q=80&w=1000" 
               alt="Limited Edition T-Shirts"
               className="rounded-md shadow-lg animate-float"
             />

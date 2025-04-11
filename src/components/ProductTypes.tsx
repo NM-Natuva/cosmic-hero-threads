@@ -16,7 +16,7 @@ const ProductTypes: React.FC = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           <div className="bg-white rounded-lg shadow-md overflow-hidden card-hover">
             <img 
-              src="/public/lovable-uploads/a4dc2ee2-9ef6-4ea8-bc1a-25b79993a68e.png" 
+              src="https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?q=80&w=1000" 
               alt="Oversized T-Shirts" 
               className="w-full aspect-square object-cover"
             />
@@ -27,7 +27,7 @@ const ProductTypes: React.FC = () => {
           
           <div className="bg-white rounded-lg shadow-md overflow-hidden card-hover">
             <img 
-              src="/public/lovable-uploads/ede317e2-fedb-4004-b72d-5ee730357f0a.png" 
+              src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?q=80&w=1000" 
               alt="Graphic Print T-Shirts" 
               className="w-full aspect-square object-cover"
             />
@@ -38,7 +38,7 @@ const ProductTypes: React.FC = () => {
           
           <div className="bg-white rounded-lg shadow-md overflow-hidden card-hover">
             <img 
-              src="/public/lovable-uploads/ac167788-081a-4272-8aa2-db0272de9049.png" 
+              src="https://images.unsplash.com/photo-1583744946564-b52ac1c389c8?q=80&w=1000" 
               alt="Acid Wash T-Shirts" 
               className="w-full aspect-square object-cover"
             />
@@ -49,7 +49,7 @@ const ProductTypes: React.FC = () => {
           
           <div className="bg-white rounded-lg shadow-md overflow-hidden card-hover">
             <img 
-              src="/public/lovable-uploads/d8fbbcf3-deb1-4ff3-9823-45c51368b511.png" 
+              src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?q=80&w=1000" 
               alt="Crop Top T-Shirts" 
               className="w-full aspect-square object-cover"
             />
