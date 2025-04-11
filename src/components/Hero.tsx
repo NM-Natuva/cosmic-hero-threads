@@ -9,7 +9,7 @@ const Hero: React.FC = () => {
       {/* New hero background image */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://i.pinimg.com/736x/f7/9a/7f/f79a7fb64571f0b62cc9471669330a2b.jpg" 
+          src="https://i.pinimg.com/474x/56/b6/15/56b615ce7489b12870d4dd031a9133ab.jpg"
           alt="Purple swirl background" 
           className="absolute inset-0 w-full h-full object-cover"
         />
