@@ -26,56 +26,56 @@ const Themes: React.FC = () => {
       id: 'heroes',
       title: 'Classic Heroes',
       description: 'Featuring the most iconic superheroes from the golden age of comics.',
-      image: 'https://images.unsplash.com/photo-1531259683007-016a7b628fc3?q=80&w=1000',
+      image: 'https://img.freepik.com/premium-photo/collection-vintage-comic-book-pages-featuring-superheroes-scenes-action_36682-88371.jpg',
       count: 24
     },
     {
       id: 'villains',
       title: 'Supervillains',
       description: 'Dark and dramatic apparel showcasing the most notorious comic book villains.',
-      image: 'https://images.unsplash.com/photo-1608889175638-9322300c35d3?q=80&w=1000',
+      image: 'https://static1.srcdn.com/wordpress/wp-content/uploads/2023/08/x-villain-banner.jpg',
       count: 18
     },
     {
       id: 'cosmic',
       title: 'Cosmic Adventures',
       description: 'Space-themed superhero designs featuring galactic battles and cosmic entities.',
-      image: 'https://images.unsplash.com/photo-1534841090574-cba2d662b62e?q=80&w=1000',
+      image: 'https://cdn.marvel.com/content/2x/immortal-thor-desktop.jpg',
       count: 15
     },
     {
       id: 'retro',
       title: 'Retro Comic Style',
       description: 'Vintage comic book art styles with classic panel layouts and retro graphics.',
-      image: 'https://images.unsplash.com/photo-1601645191163-3fc0d5d64e35?q=80&w=1000',
+      image: 'https://img.freepik.com/premium-photo/comic-stamp-wallpaper_1134901-185767.jpg',
       count: 20
     },
     {
       id: 'urban',
       title: 'Urban Heroes',
       description: 'Street-level heroes with an urban aesthetic and gritty design elements.',
-      image: 'https://images.unsplash.com/photo-1449247709967-d4461a6a6103?q=80&w=1000',
+      image: 'https://www.pantoscripts.biz/wp-content/uploads/2021/02/robinhood1000x600.jpg',
       count: 16
     },
     {
       id: 'minimalist',
       title: 'Minimalist Heroes',
       description: 'Clean, modern designs with simplified hero logos and minimal color palettes.',
-      image: 'https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?q=80&w=1000',
+      image: 'https://rukminim2.flixcart.com/image/850/1000/xif0q/poster/s/g/z/small-spos7518-poster-superheroes-minimalist-sl-7519-wall-poster-original-imaghnjpb9ughxpf.jpeg?q=90&crop=false',
       count: 12
     },
     {
       id: 'animated',
       title: 'Animated Series',
       description: 'Inspired by popular superhero cartoon shows with vibrant colors and stylized art.',
-      image: 'https://images.unsplash.com/photo-1608889476561-6242cfdbf622?q=80&w=1000',
+      image: 'https://staticg.sportskeeda.com/editor/2024/03/b6d96-17112948165399-1920.jpg',
       count: 22
     },
     {
       id: 'crossover',
       title: 'Crossover Events',
       description: 'Epic team-ups and crossover events featuring heroes from different universes.',
-      image: 'https://images.unsplash.com/photo-1624472598631-433349c9dce7?q=80&w=1000',
+      image: 'https://media.cnn.com/api/v1/images/stellar/prod/dcvsmarvelomni-adv-rev2-3-copy.jpg?q=w_1110,c_fill',
       count: 14
     }
   ];
