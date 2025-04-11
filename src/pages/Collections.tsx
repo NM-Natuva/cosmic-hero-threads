@@ -45,7 +45,7 @@ const Collections: React.FC = () => {
         name: 'Spider-Man Classic Logo Tee',
         price: 24.99,
         originalPrice: 34.99,
-        image: 'https://images.unsplash.com/photo-1503342394128-c104d54dba01?q=80&w=1000',
+        image: 'https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1693841914_5071299.jpg?format=webp&w=480&dpr=1.5',
         category: 'Men',
         tags: ['Marvel', 'Oversized Fit']
       },
@@ -53,7 +53,7 @@ const Collections: React.FC = () => {
         id: '4',
         name: 'Iron Man Tech Suit Tee',
         price: 32.99,
-        image: 'https://images.unsplash.com/photo-1576566588028-4147f3842f27?q=80&w=1000',
+        image: 'https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1741861875_2667397.jpg?format=webp&w=480&dpr=1.5',
         category: 'Men',
         tags: ['Marvel', 'Long Sleeve']
       },
@@ -61,7 +61,7 @@ const Collections: React.FC = () => {
         id: '13',
         name: 'Black Widow Stealth Tee',
         price: 31.99,
-        image: 'https://images.unsplash.com/photo-1603344797033-f0f4f587ab60?q=80&w=1000',
+        image: 'https://m.media-amazon.com/images/I/614bBKygwuL._AC_UY1000_.jpg',
         category: 'Women',
         tags: ['Marvel', 'Fitted']
       },
@@ -70,7 +70,7 @@ const Collections: React.FC = () => {
         name: 'Captain Marvel Cosmic Power Shirt',
         price: 28.99,
         originalPrice: 37.99,
-        image: 'https://images.unsplash.com/photo-1541257710737-06d667133a53?q=80&w=1000',
+        image: 'https://assets.ajio.com/medias/sys_master/root/20231221/7nyg/6583470dafa4cf41f5deffa3/-1117Wx1400H-466901670-black-MODEL.jpg',
         category: 'Women',
         tags: ['Marvel', 'Premium']
       }
@@ -80,7 +80,7 @@ const Collections: React.FC = () => {
         id: '1',
         name: 'Batman Shadow Knight T-Shirt',
         price: 29.99,
-        image: 'https://images.unsplash.com/photo-1527719327859-c6ce80353573?q=80&w=1000',
+        image: 'https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1743078788_7044700.jpg?format=webp&w=480&dpr=1.5',
         category: 'Men',
         tags: ['DC Comics', 'Graphic Print']
       },
@@ -88,7 +88,7 @@ const Collections: React.FC = () => {
         id: '3',
         name: 'Wonder Woman Star Power T-Shirt',
         price: 27.99,
-        image: 'https://images.unsplash.com/photo-1577655197620-704858b270da?q=80&w=1000',
+        image: 'https://m.media-amazon.com/images/I/616dm19XZUL._AC_UY1100_.jpg',
         category: 'Women',
         tags: ['DC Comics', 'Crop Top']
       },
@@ -97,7 +97,7 @@ const Collections: React.FC = () => {
         name: 'Superman Classic Symbol Tee',
         price: 26.99,
         originalPrice: 35.99,
-        image: 'https://images.unsplash.com/photo-1551799517-eb8f03cb5e6a?q=80&w=1000',
+        image: 'https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1586345258_1347842.jpg?format=webp&w=480&dpr=1.5',
         category: 'Men',
         tags: ['DC Comics', 'Sleeveless']
       },
@@ -106,7 +106,7 @@ const Collections: React.FC = () => {
         name: 'The Flash Lightning Bolt Shirt',
         price: 25.99,
         originalPrice: 32.99,
-        image: 'https://images.unsplash.com/photo-1561052967-61fc91e48d79?q=80&w=1000',
+        image: 'https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1686370323_3801265.jpg?format=webp&w=480&dpr=1.5',
         category: 'Men',
         tags: ['DC Comics', 'Athletic Fit']
       }
@@ -116,7 +116,7 @@ const Collections: React.FC = () => {
         id: '19',
         name: 'One Punch Hero Tee',
         price: 27.99,
-        image: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1000',
+        image: 'https://images.meesho.com/images/products/45757455/bw6sx_1200.jpg',
         category: 'Men',
         tags: ['Anime', 'Limited Edition']
       },
@@ -124,7 +124,7 @@ const Collections: React.FC = () => {
         id: '20',
         name: 'My Hero Academia Plus Ultra Shirt',
         price: 29.99,
-        image: 'https://images.unsplash.com/photo-1554568218-0f1715e72254?q=80&w=1000',
+        image: 'https://images.meesho.com/images/products/305849512/gwsgb_1200.jpg',
         category: 'Women',
         tags: ['Anime', 'Exclusive']
       },
@@ -133,7 +133,7 @@ const Collections: React.FC = () => {
         name: 'Demon Slayer Graphic Tee',
         price: 31.99,
         originalPrice: 38.99,
-        image: 'https://images.unsplash.com/photo-1579269879098-9fc406c3aac1?q=80&w=1000',
+        image: 'https://images.bewakoof.com/t1080/men-s-black-zenitsu-agatsuma-graphic-printed-oversized-t-shirt-648440-1736359044-1.jpg',
         category: 'Men',
         tags: ['Anime', 'Premium']
       },
@@ -141,7 +141,7 @@ const Collections: React.FC = () => {
         id: '22',
         name: 'Dragon Ball Z Power Level Shirt',
         price: 32.99,
-        image: 'https://images.unsplash.com/photo-1604147706283-d7119b5b822c?q=80&w=1000',
+        image: 'https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRpVJ5wcedeHrHf3bbiKKPg73bRPg5LUudmb2iOfsY57urHkK6KBOTIABvKcvpf1l2QfoaULBvBYtxsoOhvQzE2sRXNmiGGfU9udI3miJvKc0-kDDQusPdl9uo&usqp=CAc',
         category: 'Unisex',
         tags: ['Anime', 'Classic']
       }
@@ -151,7 +151,7 @@ const Collections: React.FC = () => {
         id: '23',
         name: 'Infinity Gauntlet Collector Tee',
         price: 49.99,
-        image: 'https://images.unsplash.com/photo-1604671801908-6f0c6a092c05?q=80&w=1000',
+        image: 'https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTSF4mSfR2g-nXjZQ7iqT3X_JoDlFrZzrQqckc0raWUdJgI9Po6X9pGhdEqpyu0_ofGkkB-ztlyjoRZoGp9tz3LK1qJlSzzHP4PvhsR4c7Yp0W24ciq9Gl6sy5__GYkO0iwzYaK2gLxe2c&usqp=CAc',
         category: 'Unisex',
         tags: ['Marvel', 'Limited Edition', 'Numbered']
       },
@@ -159,7 +159,7 @@ const Collections: React.FC = () => {
         id: '24',
         name: 'Dark Knight Returns Special Edition',
         price: 45.99,
-        image: 'https://images.unsplash.com/photo-1606041008023-472dfb5b530f?q=80&w=1000',
+        image: 'https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcR6OMPYCU9mVG_2upUJQWa5cKShAC3GPJubK06dbZxw1JgdAwN-tborJysZj0qFIOb-rews1flJFZmlYOfr6Wpk_mwd4Cd2c43kfWlDyc-dO3-5yOUunPVd',
         category: 'Men',
         tags: ['DC Comics', 'Limited Edition', 'Frank Miller']
       },
@@ -167,7 +167,7 @@ const Collections: React.FC = () => {
         id: '25',
         name: 'Stan Lee Tribute Collection',
         price: 59.99,
-        image: 'https://images.unsplash.com/photo-1507680434567-5739c80be1ac?q=80&w=1000',
+        image: 'https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQIBDZICo_stsG_KP5Lgckbw4hlKo2Na5wuHhit22anC-yLR-zSjvOrJv1BlUnWEZpMW4r1xoSZSDPI5X1ffmjAqt7PD9p2ld3KGpAxuxbb8rC0y-HfGgTj6B76EDT66sag889qpf8qMA&usqp=CAc',
         category: 'Unisex',
         tags: ['Marvel', 'Limited Edition', 'Collector Item']
       },
@@ -175,7 +175,7 @@ const Collections: React.FC = () => {
         id: '26',
         name: 'Comic-Con Exclusive Hero Mashup',
         price: 55.99,
-        image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=1000',
+        image: 'https://m.media-amazon.com/images/I/B1x-jveD7zL._CLa%7C2140%2C2000%7CA1DksKtql1L.png%7C0%2C0%2C2140%2C2000%2B0.0%2C0.0%2C2140.0%2C2000.0_AC_SX679_.png',
         category: 'Unisex',
         tags: ['Special Event', 'Limited Edition', 'Numbered']
       }
