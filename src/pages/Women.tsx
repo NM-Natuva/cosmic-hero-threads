@@ -16,7 +16,7 @@ const Women: React.FC = () => {
       id: '3',
       name: 'Wonder Woman Star Power T-Shirt',
       price: 27.99,
-      image: 'https://images.unsplash.com/photo-1577655197620-704858b270da?q=80&w=1000',
+      image: 'https://m.media-amazon.com/images/I/616dm19XZUL._AC_UY1100_.jpg',
       category: 'Women',
       tags: ['DC Comics', 'Crop Top']
     },
@@ -25,7 +25,7 @@ const Women: React.FC = () => {
       name: 'Harley Quinn Pop Art T-Shirt',
       price: 29.99,
       originalPrice: 39.99,
-      image: 'https://images.unsplash.com/photo-1588117305388-c2631a279f82?q=80&w=1000',
+      image: 'https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1733916119_7579563.jpg?format=webp&w=480&dpr=1.5',
       category: 'Women',
       tags: ['DC Comics', 'Crop Top']
     },
@@ -34,7 +34,7 @@ const Women: React.FC = () => {
       id: '13',
       name: 'Black Widow Stealth Tee',
       price: 31.99,
-      image: 'https://images.unsplash.com/photo-1603344797033-f0f4f587ab60?q=80&w=1000',
+      image: 'https://m.media-amazon.com/images/I/614bBKygwuL._AC_UY1000_.jpg',
       category: 'Women',
       tags: ['Marvel', 'Fitted']
     },
@@ -43,7 +43,7 @@ const Women: React.FC = () => {
       name: 'Captain Marvel Cosmic Power Shirt',
       price: 28.99,
       originalPrice: 37.99,
-      image: 'https://images.unsplash.com/photo-1541257710737-06d667133a53?q=80&w=1000',
+      image: 'https://assets.ajio.com/medias/sys_master/root/20231221/7nyg/6583470dafa4cf41f5deffa3/-1117Wx1400H-466901670-black-MODEL.jpg',
       category: 'Women',
       tags: ['Marvel', 'Premium']
     },
@@ -51,7 +51,7 @@ const Women: React.FC = () => {
       id: '15',
       name: 'Supergirl Logo Crop Top',
       price: 26.99,
-      image: 'https://images.unsplash.com/photo-1503185912284-5271ff81b9a8?q=80&w=1000',
+      image: 'https://5.imimg.com/data5/SELLER/Default/2023/9/345704089/CP/XN/LQ/20865161/super-girl-t-shirt.jpg',
       category: 'Women',
       tags: ['DC Comics', 'Crop Top']
     },
@@ -59,7 +59,7 @@ const Women: React.FC = () => {
       id: '16',
       name: 'Scarlet Witch Hex Pattern Tee',
       price: 32.99,
-      image: 'https://images.unsplash.com/photo-1560743641-3914f2c45636?q=80&w=1000',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_VcoBd2Eu_oE_zuWycQcmsOQHSDKIwv3Czg&s',
       category: 'Women',
       tags: ['Marvel', 'Limited Edition']
     },
@@ -67,7 +67,7 @@ const Women: React.FC = () => {
       id: '17',
       name: 'Batgirl Vigilante Top',
       price: 29.99,
-      image: 'https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=1000',
+      image: 'https://i.ebayimg.com/images/g/maYAAOSw~XpZW61G/s-l1200.jpg',
       category: 'Women',
       tags: ['DC Comics', 'Premium']
     },
@@ -76,7 +76,7 @@ const Women: React.FC = () => {
       name: 'Storm X-Men Weather Goddess Tee',
       price: 33.99,
       originalPrice: 42.99,
-      image: 'https://images.unsplash.com/photo-1544982503-9f984c14501a?q=80&w=1000',
+      image: 'https://i.etsystatic.com/36234370/r/il/d9c016/6342445681/il_1588xN.6342445681_hje4.jpg',
       category: 'Women',
       tags: ['Marvel', 'X-Men Collection']
     }
