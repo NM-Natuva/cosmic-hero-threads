@@ -159,7 +159,7 @@ const Themes: React.FC = () => {
               <div className="md:flex">
                 <div className="md:w-1/2">
                   <img 
-                    src="https://images.unsplash.com/photo-1624472598631-433349c9dce7?q=80&w=1000" 
+                    src="https://i.pinimg.com/736x/6b/a9/e8/6ba9e81ba385bcc7d234d9cb15088a24.jpg" 
                     alt="Crossover Events" 
                     className="w-full h-full object-cover"
                   />
