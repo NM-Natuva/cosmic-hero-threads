@@ -16,7 +16,7 @@ const Men: React.FC = () => {
       id: '1',
       name: 'Batman Shadow Knight T-Shirt',
       price: 29.99,
-      image: 'https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1743078788_7044700.jpg?w=480&dpr=1.5',
+      image: 'https://www.teez.in/cdn/shop/products/DarkKnightLogoTshirt_1_large.jpg?v=1648123453',
       category: 'Men',
       tags: ['DC Comics', 'Graphic Print']
     },
