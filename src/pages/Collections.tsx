@@ -1,10 +1,7 @@
-
-import React, { useState } from 'react';
+import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { useParams } from 'react-router-dom';
-import { ArrowLeft, Clapperboard, Comic, Star, Users } from 'lucide-react';
-import { Link } from 'react-router-dom';
 import ProductGrid from '@/components/ProductGrid';
 import { Product } from '@/components/ProductCard';
 import { useCart } from '@/context/CartContext';
@@ -14,34 +11,13 @@ import {
   comicBookArts, 
   superheroTeamUps 
 } from '@/data/catalogData';
+import CollectionHero from '@/components/collections/CollectionHero';
+import CollectionsList from '@/components/collections/CollectionsList';
+import { collectionTitles, collectionDescriptions } from '@/utils/collectionsData';
 
 const Collections: React.FC = () => {
   const { collectionType } = useParams();
   const { totalCartItems, setIsCartOpen, addToCart } = useCart();
-  
-  // Collection titles based on route parameter
-  const collectionTitles: Record<string, string> = {
-    'marvel': 'Marvel Universe',
-    'dc': 'DC Comics',
-    'anime': 'Anime Heroes',
-    'limited-edition': 'Limited Edition',
-    'vintage': 'Vintage Heroes',
-    'movie-adaptations': 'Movie Adaptations',
-    'comic-art': 'Comic Book Art',
-    'team-ups': 'Superhero Team-ups'
-  };
-  
-  // Collection descriptions
-  const collectionDescriptions: Record<string, string> = {
-    'marvel': 'Avengers assemble! Gear up with our exclusive Marvel collection featuring your favorite superheroes.',
-    'dc': 'Channel your inner superhero with our DC Comics inspired apparel. From Batman to Wonder Woman.',
-    'anime': 'Bring your favorite anime characters to life with our collection of high-quality graphic tees.',
-    'limited-edition': 'Our exclusive superhero collaboration series. Limited stock available - don\'t miss out!',
-    'vintage': 'Classic superhero designs from the golden age of comics. Nostalgic styles with modern comfort.',
-    'movie-adaptations': 'Shirts inspired by your favorite superhero blockbusters. Straight from the big screen.',
-    'comic-art': 'Featuring original artwork from legendary comic book artists. Wearable masterpieces.',
-    'team-ups': 'Celebrating iconic superhero partnerships and team-ups from across comic universes.'
-  };
   
   // Collection products
   const collectionProducts: Record<string, Product[]> = {
@@ -196,22 +172,6 @@ const Collections: React.FC = () => {
   const description = collectionDescriptions[collectionType || ''] || 'Explore our various superhero-themed collections.';
   const products = collectionType ? collectionProducts[collectionType] || [] : [];
   
-  // Icons for each collection
-  const CollectionIcon = ({ type }: { type: string }) => {
-    switch(type) {
-      case 'vintage':
-        return <Star className="h-8 w-8 mb-2 text-white/70" />;
-      case 'movie-adaptations':
-        return <Clapperboard className="h-8 w-8 mb-2 text-white/70" />;
-      case 'comic-art':
-        return <Comic className="h-8 w-8 mb-2 text-white/70" />;
-      case 'team-ups':
-        return <Users className="h-8 w-8 mb-2 text-white/70" />;
-      default:
-        return null;
-    }
-  };
-  
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar 
@@ -220,19 +180,8 @@ const Collections: React.FC = () => {
       />
       
       <main className="flex-grow">
-        {/* Hero Banner */}
-        <section className="bg-gradient-to-r from-hero-bg to-black py-16 text-white">
-          <div className="container mx-auto px-4">
-            <Link to="/" className="inline-flex items-center text-white/70 hover:text-white mb-4 group">
-              <ArrowLeft size={16} className="mr-2 transition-transform group-hover:-translate-x-1" />
-              Back to Home
-            </Link>
-            <h1 className="text-3xl md:text-5xl font-bold mb-4">{title}</h1>
-            <p className="text-white/80 max-w-2xl">{description}</p>
-          </div>
-        </section>
+        <CollectionHero title={title} description={description} />
         
-        {/* Collection Content */}
         {products.length > 0 ? (
           <ProductGrid 
             title={`${title} Collection`}
@@ -240,29 +189,10 @@ const Collections: React.FC = () => {
             onAddToCart={addToCart}
           />
         ) : (
-          <section className="py-16">
-            <div className="container mx-auto px-4">
-              <h2 className="text-3xl font-bold mb-8 text-center">All Collections</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                {Object.entries(collectionTitles).map(([slug, title]) => (
-                  <Link 
-                    to={`/collections/${slug}`} 
-                    key={slug}
-                    className="bg-gradient-to-br from-hero-bg/80 to-black/90 text-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
-                  >
-                    <div className="p-6 text-center">
-                      <CollectionIcon type={slug} />
-                      <h3 className="text-xl font-bold mb-2">{title}</h3>
-                      <p className="text-sm text-white/70 mb-4">{collectionDescriptions[slug]}</p>
-                      <span className="inline-block bg-white/20 hover:bg-white/30 transition-colors text-white rounded-full px-4 py-2 text-sm">
-                        Browse Collection
-                      </span>
-                    </div>
-                  </Link>
-                ))}
-              </div>
-            </div>
-          </section>
+          <CollectionsList 
+            collectionTitles={collectionTitles}
+            collectionDescriptions={collectionDescriptions}
+          />
         )}
       </main>
       
