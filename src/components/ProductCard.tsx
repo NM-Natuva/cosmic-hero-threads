@@ -82,9 +82,9 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, onAddToCart }) => {
       <div className="p-4">
         <h3 className="font-semibold text-sm truncate">{product.name}</h3>
         <div className="flex items-center mt-1">
-          <span className="font-bold text-cosmic-purple">${product.price}</span>
+          <span className="font-bold text-cosmic-purple">₹{product.price}</span>
           {product.originalPrice && (
-            <span className="ml-2 text-sm text-gray-500 line-through">${product.originalPrice}</span>
+            <span className="ml-2 text-sm text-gray-500 line-through">₹{product.originalPrice}</span>
           )}
         </div>
         <div className="mt-2 flex flex-wrap gap-1">

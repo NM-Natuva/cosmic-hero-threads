@@ -107,7 +107,7 @@ const Cart: React.FC<CartProps> = ({
                     </div>
                   </div>
                   <div className="ml-4 font-medium">
-                    ${(item.price * item.quantity).toFixed(2)}
+                    ₹{(item.price * item.quantity).toFixed(2)}
                   </div>
                 </div>
               ))}
@@ -121,15 +121,15 @@ const Cart: React.FC<CartProps> = ({
             <div className="space-y-1">
               <div className="flex justify-between">
                 <span className="text-gray-600">Subtotal</span>
-                <span>${subtotal.toFixed(2)}</span>
+                <span>₹{subtotal.toFixed(2)}</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-gray-600">Estimated Tax</span>
-                <span>${estimatedTax.toFixed(2)}</span>
+                <span>₹{estimatedTax.toFixed(2)}</span>
               </div>
               <div className="flex justify-between text-lg font-medium pt-2 border-t">
                 <span>Total</span>
-                <span>${total.toFixed(2)}</span>
+                <span>₹{total.toFixed(2)}</span>
               </div>
             </div>
             <Link to="/payment" onClick={onClose}>

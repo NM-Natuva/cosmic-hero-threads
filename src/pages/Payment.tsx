@@ -118,24 +118,24 @@ const Payment = () => {
             <div className="mt-8">
               <div className="flex justify-between mb-2">
                 <span>Subtotal</span>
-                <span>$49.99</span>
+                <span>₹4,999</span>
               </div>
               <div className="flex justify-between mb-2">
                 <span>Shipping</span>
-                <span>$5.00</span>
+                <span>₹500</span>
               </div>
               <div className="flex justify-between mb-2">
                 <span>Tax</span>
-                <span>$5.50</span>
+                <span>₹550</span>
               </div>
               <div className="flex justify-between font-bold border-t pt-2 mt-2">
                 <span>Total</span>
-                <span>$60.49</span>
+                <span>₹6,049</span>
               </div>
             </div>
             
             <Button type="submit" className="w-full" disabled={isLoading}>
-              {isLoading ? 'Processing...' : 'Pay $60.49'}
+              {isLoading ? 'Processing...' : 'Pay ₹6,049'}
             </Button>
           </form>
         </div>
